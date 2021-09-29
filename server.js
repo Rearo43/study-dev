@@ -32,7 +32,7 @@ function movies(req, resp) {
 
   let qObject = {
     api_key: process.env.MOVIES,
-    query: req.query.search_query,
+    // query: req.query.search_query,
   };
 
   superagent
@@ -43,7 +43,7 @@ function movies(req, resp) {
         return new Movies(movie);
       });
 
-      resp.status(200).json(moviesArr);
+      resp.status(200).send(moviesArr);
     })
     .catch(() => resp.status(500).send('Movies Broken!'));
 }

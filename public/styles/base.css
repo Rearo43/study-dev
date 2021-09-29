@@ -1,0 +1,51 @@
+body {
+    background-color: #172121;
+}
+
+header{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 40px;
+    width:fit-content;
+    margin: auto;
+    color: #1E91D6;
+}
+
+nav{
+  position: relative;
+  padding-bottom: 12px;
+  /* margin-left: 10%; */
+  
+}
+
+ul{
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin: 0 40px 0 0;
+    opacity: .4;
+    transition: all 0.4s ease;
+}
+
+li:hover{
+    opacity: .7;
+}
+
+li:active{
+    opacity: 1;
+    text-underline-position: below;
+    -moz-text-decoration-color: azure;
+}
+
+a{
+    text-decoration: none;
+    color: #1E91D6;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 14px;
+      }
